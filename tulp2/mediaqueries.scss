@@ -1,0 +1,66 @@
+@media screen and (max-width: 75rem){
+    body{
+        font-size: 1.6rem;
+    }
+    .over{
+        height: 120rem;
+    }
+
+    .over__colum{
+        flex-direction: column;
+    }
+    .over__p {
+        width: 100%;
+        color: #eee;
+    }
+    .over__img {
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+    }
+    .kenmerken{
+        min-height: 120rem;
+
+    }
+    .nav__button{
+        display: none;
+    }
+
+
+    .nav__list{
+        width: 60%;
+    }
+
+    nav{
+        position: relative;
+    }
+    .kenmerken__listItem{
+        width: 100%;
+    }
+    .gallerij{
+        height: auto;
+    }
+    .gallerij__fotos{
+        flex-wrap: wrap;
+    }
+
+    .gallerij__foto{
+        height: 20rem;
+        width: 100%;
+
+    }
+    .gallerij__foto:hover .gallerij__button {
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+    .foto:hover .gallerij__gradient {
+        transform: scaleX(0);
+    }
+}
+
+@media screen and (max-width: 50rem){
+    .gallerij__list{
+        flex-direction: column;
+    }
+}

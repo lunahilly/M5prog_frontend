@@ -1,0 +1,48 @@
+@use 'components';
+@use 'colors';
+
+.over{
+    @extend %section;
+}
+
+.over__header{
+    @extend %header;
+}
+
+.over__h2{
+    @extend %h2Handwriting;
+}
+
+.over__colum{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.over__p{
+    width: 80%;
+    color: #eee;
+}
+
+.over__figure{
+    position: relative;
+    height: 100%;
+    width: 30rem;
+}
+
+.over__figure::after{
+    content: "";
+    background: linear-gradient(to bottom right, rgb(243, 21, 89,0.1),70%, rgba(255, 82, 162,0.1));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8;
+}
+
+.over__img{
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}

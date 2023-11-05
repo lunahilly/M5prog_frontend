@@ -1,0 +1,55 @@
+@use 'components';
+@use 'colors';
+@use 'fonts';
+
+.kenmerken{
+    @extend %section;
+}
+
+.kenmerken__header{
+    @extend %header;
+    height: 20%;
+}
+
+.kenmerken__h2{
+    @extend %h2Handwriting;
+}
+
+.kenmerken__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+}
+
+.kenmerken__listItem{
+    list-style: none;
+    color: #eee;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerken__img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.kenmerken__h3{
+    font-size: 150%;
+    font-family: fonts.$handwriting;
+}
+
+.kenmerken__p{
+    width: 50ch;
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,357 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background: #16213E;
+}
+
+a, a:visited, a:link{
+    color: #eee;
+    text-decoration: none;
+}
+
+.nav{
+    width: 100%;
+    background: #FF78C4;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: #eee;
+    font-size: 120%;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.nav >i{
+    font-size: 200%;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.cta{
+    width: 15rem;
+    padding:1rem;
+    font-size: 80%;
+    background: hsl(324, 80%, 63%);
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover{
+    cursor: pointer;
+    background: hsl(324, 80%, 43%);
+    transition: 0.2s;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;    
+    justify-content: center;
+}
+
+.banner >figure{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgb(243, 21, 89,0.1),70%, rgba(255, 82, 162,0.1)), url(/img/puppy\ banner.jpg);
+    background-size: cover;
+    background-position: 50%, 90%;
+
+}
+
+.banner > figure> div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #eee;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo{
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #FF78C4;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.heading{
+    font-family: 'Kalam', cursive;
+    font-size: 250%;
+}
+
+.heading2{
+    font-family: 'Kalam', cursive;
+    font-size: 150%;
+}
+
+.over{
+    padding: 4rem;
+    border-bottom: 0.2rem solid #FF78C4;
+}
+
+.over > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+.over > header > h2{
+    color: #eee;
+    font-family: 'Kalam', cursive;
+    font-size: 250%;
+}
+
+.over > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.over > div >p{
+    width: 80%;
+    color: #eee;
+}
+
+.over > div > figure > img{
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.over > div > figure {
+    position: relative;
+    height: 100%;
+    width: 30rem;
+}
+
+.over >div >figure::after{
+    content: "";
+    background: linear-gradient(to bottom right, rgb(243, 21, 89,0.1),70%, rgba(255, 82, 162,0.1));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8;
+}
+
+.Kenmerken{
+    padding: 2rem;
+    border-bottom: 0.2rem solid #FF78C4;
+}
+
+.Kenmerken > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 20%;
+    
+}
+
+.Kenmerken > header > h2{
+    color: #eee;
+    font-family: 'Kalam', cursive;
+    font-size: 250%;
+}
+
+.onzeKenmerken{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+}
+
+.kenmerk{
+    list-style: none;
+    color: #eee;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerk >h3{
+    font-size: 150%;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.kenmerk >p{
+    width: 50ch;
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 30px;
+}
+
+.kenmerk > img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Gallerij{
+    height: 80vh;
+}
+
+.Gallerij > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+    
+}
+
+.Gallerij > header > h2{
+    color: #eee;
+    font-family: 'Kalam', cursive;
+    font-size: 250%;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.foto > section{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(243, 21, 89,0.2),70%, rgba(255, 82, 162,0.2));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.foto:hover > section{
+    opacity: 1;
+}
+
+.foto > section > .cta{
+    opacity: 0;
+    transition-delay: 1s;
+    margin-bottom: 20px;
+}
+
+.foto:hover>section >.cta{
+    opacity: 1;
+}
+
+.foto > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 75rem){
+    body{
+        font-size: 1.6rem;
+    }
+    .over{
+        height: 120rem;
+    }
+
+    .over>div{
+        flex-direction: column;
+    }
+    .over>div>div>p {
+        width: 100%;
+        color: #eee;
+    }
+    .over>div>img {
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+    }
+    .kenmerken{
+        min-height: 120rem;
+
+    }
+
+    nav > button{
+        display: none;
+    }
+
+
+    nav > ul{
+        width: 60%;
+    }
+
+    .nav{
+        position: relative;
+    }
+    .kenmerk{
+        width: 100%;
+    }
+    .gallerij{
+        height: auto;
+    }
+    .fotos{
+        flex-wrap: wrap;
+    }
+
+    .foto{
+        height: 20rem;
+        width: 100%;
+
+    }
+    .foto:hover>section>.cta {
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+    .foto:hover>section {
+        transform: scaleX(0);
+    }
+}
+
+@media screen and (max-width: 50rem){
+    .list{
+        flex-direction: column;
+    }
+}

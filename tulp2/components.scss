@@ -1,0 +1,43 @@
+@use 'fonts';
+@use 'colors';
+
+//cta button with hover
+
+%cta{
+    width: 15rem;
+    padding:1rem;
+    font-size: 80%;
+    background: hsl(324, 80%, 63%);
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: hsl(324, 80%, 43%);
+    transition: 0.2s;
+}
+
+//h2 for sections and header 
+
+%h2Handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 180%;
+    color: colors.$font-color;
+}
+
+//defualt sections
+
+%section{
+    padding: 2rem;
+    border-bottom: 0.2rem solid #FF78C4;
+}
+
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
