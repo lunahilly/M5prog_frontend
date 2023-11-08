@@ -1,0 +1,40 @@
+.header{
+    width: 100vw;
+    height: 15rem;
+    background: #E893CF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.header__logo{
+    font-size: 200%;
+    color: #F9F5F6;
+    border: 0.3rem solid #F9F5F6;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.header__logo:hover{
+    color: #F8E8EE;
+    border: 0.3rem solid #F8E8EE;
+}
+
+.header__rightWrapper{
+    display: flex;
+    gap: 4rem;
+}
+
+.header__avatar{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.header__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}

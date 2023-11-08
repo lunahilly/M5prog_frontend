@@ -1,0 +1,10 @@
+@use '_colors';
+@use 'mixins';
+
+body{
+    background: colors.$background;
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
