@@ -1,0 +1,44 @@
+@use '../../variables';
+@use '../../extend';
+.mouth{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+    align-items: end;
+}
+
+.mouth_first{
+    background: variables.$face;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100% );
+    transform: rotate(90deg);
+}
+
+.mouth_second{
+    background: variables.$face;
+    width: 40px;
+    height: 35px;
+}
+
+.square_middle{
+    background: variables.$face;
+    width: 50px;
+    height: 60px;
+}
+
+.mouth_forth{
+    background: linear-gradient(variables.$face 50%, 50%,transparent);
+    width: 40px;
+    height: 60px;
+}
+
+.mouth_fifth{
+    background: variables.$face;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100% );
+
+}

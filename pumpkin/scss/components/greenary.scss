@@ -1,0 +1,19 @@
+@use '../variables';
+@use '../extend';
+
+.leaf {
+    background: variables.$leaf;
+    width: 150px;
+    height: 150px;
+    border-radius: 0 100%;
+    transform: translate(-100%, -245%);
+    border: 2px solid black ;
+}
+  
+.stump {
+    width: 90px;
+    height: 150px;
+    background: variables.$stump;
+    transform: translate(80%, -230%);
+    border: 2px solid black;
+}

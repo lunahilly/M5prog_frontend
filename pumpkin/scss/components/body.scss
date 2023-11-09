@@ -1,0 +1,25 @@
+@use '../variables';
+@use '../extend';
+
+.pumpkin_body{
+    width: 1000px;
+    max-height: 800px;
+    position: absolute;
+    display: flex;
+}
+
+.left{
+    @extend %pumpkinbody;
+    transform: translateX(50%);
+    border-right: 2px solid transparent;
+}
+
+.right{
+    @extend %pumpkinbody;
+    transform: translateX(-50%);
+    border-left: 2px solid transparent;
+}
+
+.middle{
+    @extend %pumpkinbody;
+}

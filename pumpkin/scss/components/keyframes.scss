@@ -1,0 +1,11 @@
+@use '../variables';
+@use '../extend';
+
+@keyframes glow{
+    0% {background: variables.$glow;};
+    20%{background: variables.$glow-animation1;};
+    40%{background: variables.$glow-animation2;};
+    60%{background: variables.$glow-animation3;};
+    75%{background: variables.$glow-animation2;};
+    90%{background: variables.$glow-animation1;};
+}
