@@ -25,7 +25,7 @@ body {
 .header {
   width: 100vw;
   height: 15rem;
-  background: #E893CF;
+  background: #E966A0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,15 +34,24 @@ body {
 
 .header__logo {
   font-size: 200%;
-  color: #F9F5F6;
-  border: 0.3rem solid #F9F5F6;
-  padding: 2rem;
+  color: #2B2730;
+  border: 0.3rem solid #2B2730;
   border-radius: 50%;
+  height: 8rem;
+  box-sizing: border-box;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__logo:hover {
   color: #F8E8EE;
-  border: 0.3rem solid #F8E8EE;
+  border: 0.3rem dashed #F8E8EE;
+  box-sizing: border-box;
+  transform: rotate(360deg);
+  transition: 0.6s all;
+  transition-timing-function: linear;
 }
 
 .header__rightWrapper {
@@ -54,6 +63,12 @@ body {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
+}
+
+.header__avatar:hover {
+  transform: rotate(360deg);
+  transition: 1s all;
+  transition-timing-function: linear;
 }
 
 .header__img {
